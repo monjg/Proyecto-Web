@@ -1,0 +1,64 @@
+:root {
+    --clr-bg:       #050505;
+    --clr-surface:  #111111;
+    --clr-border:   rgba(255,255,255,0.1);
+    --clr-white:    #ffffff;
+    --clr-gray-1:   #aaaaaa;
+    --clr-gray-2:   #555555;
+    --ff-display:   'Inter', sans-serif;
+    --ff-body:      'Barlow', sans-serif;
+    --transition:   0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--clr-bg);
+    color: var(--clr-white);
+    font-family: var(--ff-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: var(--clr-white);
+    color: var(--clr-bg);
+}
+
+img { display: block; }
+
+a { text-decoration: none; }
+
+
+/* -------------- 
+   MARQUEE  */
+
+    .ticker {
+        background: var(--clr-white);
+        color: var(--clr-bg);
+        padding: 9px 0;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+    .ticker-track {
+        display: flex;
+        gap: 0;
+        animation: ticker-scroll 15s linear infinite;
+        white-space: nowrap;
+    }
+    .ticker-track span {
+        font-family: var(--ff-display);
+        font-weight: 900;
+        font-size: 0.85rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding-right: 4rem;
+    }
+    @keyframes ticker-scroll {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+
+
+
