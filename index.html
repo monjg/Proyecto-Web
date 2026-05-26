@@ -59,9 +59,9 @@
             <!-- Nav links -->
             <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#conciertos">Conciertos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#la-sala">La Sala</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conciertos">CONCIERTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#la-sala">LA SALA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
@@ -92,5 +92,369 @@
             </a>
         </div>
     </header>
+
+    <div class="stats-bar">
+        <div class="container-xl">
+            <div class="row g-0 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number" id="statAforo">0</span>
+                        <span class="stat-label">Aforo Máximo</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number">2026</span>
+                        <span class="stat-label">Fundado en</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number">Nerja</span>
+                        <span class="stat-label">Málaga, Andalucía</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Próximos eventos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+    <section id="conciertos" aria-labelledby="cartelera-title">
+        <div class="container-xl">
+            <div class="section-header">
+                <h2 class="section-title gsap-fade-left" id="cartelera-title">Programación</h2>
+                <a href="#conciertos" class="btn-ym-ghost gsap-fade-right" id="allEventsBtn">Todos los eventos</a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Evento 1 -->
+                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                    <article class="event-card img-bw-hover" aria-label="Concierto: Los Relámpagos">
+                        <div class="event-card__img-wrap">
+                            <img 
+                                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" 
+                                alt="Los Relámpagos en concierto"
+                                class="img-bw"
+                            >
+                            <div class="event-card__date">24 May</div>
+                        </div>
+                        <div class="event-card__body">
+                            <span class="event-card__genre">Indie / Alternativo</span>
+                            <h3 class="event-card__title">Los Relámpagos</h3>
+                            <p class="event-card__desc">Presentación de su nuevo álbum. Un directo íntimo para solo 130 afortunados.</p>
+                            <div class="event-card__footer">
+                                <span class="event-card__price">15€</span>
+                                <button class="btn-tickets" aria-label="Comprar entradas para Los Relámpagos">Entradas</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                    <article class="event-card img-bw-hover" aria-label="Concierto: Quarteto Nocturno">
+                        <div class="event-card__img-wrap">
+                            <img 
+                                src="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&w=800&q=80" 
+                                alt="Quarteto Nocturno en concierto"
+                                class="img-bw"
+                            >
+                            <div class="event-card__date">02 Jun</div>
+                        </div>
+                        <div class="event-card__body">
+                            <span class="event-card__genre">Jazz / Fusión</span>
+                            <h3 class="event-card__title">Quarteto Nocturno</h3>
+                            <p class="event-card__desc">Sesión de jazz contemporáneo en el mejor ambiente de Nerja.</p>
+                            <div class="event-card__footer">
+                                <span class="event-card__price">12€</span>
+                                <button class="btn-tickets" aria-label="Comprar entradas para Quarteto Nocturno">Entradas</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Evento 3 – Sold Out -->
+                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                    <article class="event-card" style="opacity:0.6;" aria-label="Concierto: Sesión Analógica (agotado)">
+                        <div class="event-card__img-wrap">
+                            <img 
+                                src="https://images.unsplash.com/photo-1470229722913-7c092bb4ace4?auto=format&fit=crop&w=800&q=80" 
+                                alt="Sesión Analógica"
+                                class="img-bw"
+                                style="opacity:0.5;"
+                            >
+                            <div class="event-card__date event-card__date--dark">15 Jun</div>
+                            <div class="event-card__sold-out" aria-label="Entradas agotadas">
+                                <span>Sold Out</span>
+                            </div>
+                        </div>
+                        <div class="event-card__body">
+                            <span class="event-card__genre">Electrónica</span>
+                            <h3 class="event-card__title">Sesión Analógica</h3>
+                            <p class="event-card__desc">Sintetizadores en directo. Aforo completo alcanzado.</p>
+                            <div class="event-card__footer">
+                                <span class="event-card__price event-card__price--muted">—</span>
+                                <button class="btn-tickets-disabled" disabled aria-disabled="true">Agotado</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="la-sala" aria-labelledby="sala-title">
+        <div class="container-xl">
+            <div class="row g-5 align-items-center">
+                <!-- Text -->
+                <div class="col-12 col-lg-6">
+                    <h2 class="sala-heading gsap-fade-left" id="sala-title">
+                        Cultura<br>
+                        <span class="muted">Underground</span>
+                    </h2>
+                    <p class="sala-lead gsap-fade">
+                        Ubicado en el corazón de Nerja, <strong>Yaumate Club</strong> es una sala diseñada por y para melómanos. Creemos en la cercanía entre el artista y el público.
+                    </p>
+                    <p class="sala-lead gsap-fade">
+                        Con un aforo estricto para mantener la intimidad, nuestra acústica está cuidada al milímetro para ofrecer directos puros, crudos y memorables.
+                    </p>
+
+                    <div class="sala-stats gsap-fade">
+                        <div>
+                            <span class="sala-stat-num">130</span>
+                            <span class="sala-stat-label">Aforo Máximo</span>
+                        </div>
+                        <div>
+                            <span class="sala-stat-num">Nerja</span>
+                            <span class="sala-stat-label">Málaga, Andalucía</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-12 col-lg-6 gsap-fade-right">
+                    <div class="sala-img-frame">
+                        <img 
+                            src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=900&q=80" 
+                            alt="Interior de la sala Yaumate Club"
+                            class="img-bw"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+    $(function () {
+        // =======================================================
+        // GSAP: register plugin
+        // =======================================================
+        gsap.registerPlugin(ScrollTrigger);
+
+        // =======================================================
+        // HERO ANIMATIONS (on load)
+        // =======================================================
+        const heroTimeline = gsap.timeline({ delay: 0.15 });
+
+        heroTimeline
+            .to('.hero .hero-badge', {
+                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
+            })
+            .to('.hero-title .d-block', {
+                opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', stagger: 0.12
+            }, '-=0.3')
+            .to('.hero-lead', {
+                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
+            }, '-=0.3')
+            .to('.hero .btn-ym-primary', {
+                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
+            }, '-=0.3');
+
+        // =======================================================
+        // HERO PARALLAX (GSAP ScrollTrigger)
+        // =======================================================
+        gsap.to('#heroBgImg', {
+            y: '20%',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: true
+            }
+        });
+
+        // =======================================================
+        // SCROLL ANIMATIONS: fade-up elements
+        // =======================================================
+        gsap.utils.toArray('.gsap-fade').forEach(function (el) {
+            // Skip hero elements (already animated)
+            if ($(el).closest('.hero').length) return;
+
+            gsap.to(el, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 88%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        gsap.utils.toArray('.gsap-fade-left').forEach(function (el) {
+            gsap.to(el, {
+                opacity: 1,
+                x: 0,
+                duration: 0.9,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 88%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        gsap.utils.toArray('.gsap-fade-right').forEach(function (el) {
+            gsap.to(el, {
+                opacity: 1,
+                x: 0,
+                duration: 0.9,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 88%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+
+        // =======================================================
+        // JQUERY: Stats counter animation
+        // =======================================================
+        var afocoAnimated = false;
+
+        function animateCounter($el, target, duration) {
+            $({ value: 0 }).animate({ value: target }, {
+                duration: duration,
+                easing: 'swing',
+                step: function () {
+                    $el.text(Math.floor(this.value));
+                },
+                complete: function () {
+                    $el.text(target);
+                }
+            });
+        }
+
+        $(window).on('scroll.stats', function () {
+            var $stat = $('#statAforo');
+            if (!afocoAnimated && $stat.length) {
+                var top = $stat[0].getBoundingClientRect().top;
+                if (top < window.innerHeight * 0.92) {
+                    afocoAnimated = true;
+                    animateCounter($stat, 130, 1200);
+                    $(window).off('scroll.stats');
+                }
+            }
+        });
+
+        // =======================================================
+        // JQUERY: Navbar scroll behaviour
+        // =======================================================
+        $(window).on('scroll.nav', function () {
+            if ($(this).scrollTop() > 60) {
+                $('.ym-nav').css('background', 'rgba(5,5,5,0.97)');
+            } else {
+                $('.ym-nav').css('background', 'rgba(5,5,5,0.92)');
+            }
+        });
+
+        // =======================================================
+        // JQUERY: Close mobile menu on link click
+        // =======================================================
+        $('#navCollapse .nav-link').on('click', function () {
+            var bsCollapse = bootstrap.Collapse.getInstance(document.getElementById('navCollapse'));
+            if (bsCollapse) bsCollapse.hide();
+        });
+
+        // =======================================================
+        // JQUERY: Ticket button click (demo)
+        // =======================================================
+        $(document).on('click', '.btn-tickets', function () {
+            var $btn = $(this);
+            var original = $btn.text();
+            $btn.text('✓ Añadido').css({ background: '#333', color: '#fff', borderColor: '#333' });
+            setTimeout(function () {
+                $btn.text(original).css({ background: '', color: '', borderColor: '' });
+            }, 2000);
+        });
+
+        // =======================================================
+        // JQUERY: Newsletter form submit (demo)
+        // =======================================================
+        $('#newsletterForm').on('submit', function (e) {
+            e.preventDefault();
+            var $input = $('#nl-email');
+            var $btn = $(this).find('.nl-btn');
+            if ($input.val() === '') {
+                $input.css('border-color', '#ff4444');
+                setTimeout(function () { $input.css('border-color', ''); }, 2000);
+                return;
+            }
+            $btn.text('¡Listo!').prop('disabled', true);
+            $input.val('').prop('disabled', true);
+            setTimeout(function () {
+                $btn.text('Avisadme').prop('disabled', false);
+                $input.prop('disabled', false);
+            }, 4000);
+        });
+
+        // =======================================================
+        // GSAP: Event cards stagger on scroll
+        // =======================================================
+        gsap.from('.event-card', {
+            opacity: 0,
+            y: 50,
+            duration: 0.7,
+            stagger: 0.15,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '#conciertos .row',
+                start: 'top 85%',
+                toggleActions: 'play none none none'
+            }
+        });
+
+    }); // end jQuery ready
+    </script>
 
 </body>
