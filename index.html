@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+    
     <div class="ticker" aria-hidden="true">
         <div class="ticker-track" id="tickerTrack">
             <span>Yaumate Club</span>
@@ -43,12 +44,11 @@
             <span>·</span>
         </div>
     </div>
-
     <nav class="ym-nav navbar navbar-expand-md" aria-label="Navegación principal">
         <div class="container-xl">
             <!-- Logo -->
             <a class="navbar-brand" href="#top" aria-label="Yaumate Club - Inicio">
-                <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="50" height="auto">
+                <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="80" height="auto">
             </a>
 
             <!-- Mobile toggler -->
@@ -89,6 +89,9 @@
             </p>
             <a href="#conciertos" class="btn-ym-primary gsap-fade" style="--delay: 0.4s">
                 Ver Programación
+            </a>
+            <a href="#conciertos" class="btn-ym-primary gsap-fade" style="--delay: 0.4s">
+                Entradas
             </a>
         </div>
     </header>
@@ -137,22 +140,22 @@
             <div class="row g-4">
                 <!-- Evento 1 -->
                 <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card img-bw-hover" aria-label="Concierto: Los Relámpagos">
+                    <article class="event-card img-bw-hover" aria-label="Concierto: Germán Salto">
                         <div class="event-card__img-wrap">
                             <img 
-                                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" 
-                                alt="Los Relámpagos en concierto"
+                                src="img/German.png" 
+                                alt="Germán Salto"
                                 class="img-bw"
                             >
-                            <div class="event-card__date">24 May</div>
+                            <div class="event-card__date">13 Junio</div>
                         </div>
                         <div class="event-card__body">
-                            <span class="event-card__genre">Indie / Alternativo</span>
-                            <h3 class="event-card__title">Los Relámpagos</h3>
-                            <p class="event-card__desc">Presentación de su nuevo álbum. Un directo íntimo para solo 130 afortunados.</p>
-                            <div class="event-card__footer">
-                                <span class="event-card__price">15€</span>
-                                <button class="btn-tickets" aria-label="Comprar entradas para Los Relámpagos">Entradas</button>
+                            <span class="event-card__genre">Rock Español</span>
+                            <h3 class="event-card__title">Germán Salto</h3>
+                            <p class="event-card__desc">Ha tocado con Steve Wynn, ha dirigido la gira europea de Nikki Lane y ha publicado discos que enamoran a la crítica uno tras otro. Ahora llega a Nerja con Ojo de Bife, su nuevo trabajo de power pop y americana en castellano</p>
+                            <div class="event-card__footer" >
+                                <span class="event-card__price">9,99€</span>
+                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Germán Salto">Entradas</a>
                             </div>
                         </div>
                     </article>
@@ -160,22 +163,22 @@
 
                 <!-- Evento 2 -->
                 <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card img-bw-hover" aria-label="Concierto: Quarteto Nocturno">
+                    <article class="event-card img-bw-hover" aria-label="Concierto: MFC Chicken">
                         <div class="event-card__img-wrap">
                             <img 
-                                src="https://images.unsplash.com/photo-1520182205149-1e5e4e7329b4?auto=format&fit=crop&w=800&q=80" 
-                                alt="Quarteto Nocturno en concierto"
+                                src="img/MFC.png" 
+                                alt="MFC Chicken"
                                 class="img-bw"
                             >
-                            <div class="event-card__date">02 Jun</div>
+                            <div class="event-card__date">25 Junio</div>
                         </div>
                         <div class="event-card__body">
-                            <span class="event-card__genre">Jazz / Fusión</span>
-                            <h3 class="event-card__title">Quarteto Nocturno</h3>
-                            <p class="event-card__desc">Sesión de jazz contemporáneo en el mejor ambiente de Nerja.</p>
+                            <span class="event-card__genre">Rock 'n' Roll / Swing / Rhythm & Blues</span>
+                            <h3 class="event-card__title">MFC Chicken</h3>
+                            <p class="event-card__desc">Una de esas noches donde vienes a escuchar música y acabas sin querer irte. </p>
                             <div class="event-card__footer">
-                                <span class="event-card__price">12€</span>
-                                <button class="btn-tickets" aria-label="Comprar entradas para Quarteto Nocturno">Entradas</button>
+                                <span class="event-card__price">9,99€</span>
+                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para MFC Chicken">Entradas</a>
                             </div>
                         </div>
                     </article>
@@ -219,8 +222,8 @@
                 <!-- Text -->
                 <div class="col-12 col-lg-6">
                     <h2 class="sala-heading gsap-fade-left" id="sala-title">
-                        Cultura<br>
-                        <span class="muted">Underground</span>
+                        La<br>
+                        <span class="muted">Sala</span>
                     </h2>
                     <p class="sala-lead gsap-fade">
                         Ubicado en el corazón de Nerja, <strong>Yaumate Club</strong> es una sala diseñada por y para melómanos. Creemos en la cercanía entre el artista y el público.
@@ -255,6 +258,69 @@
         </div>
     </section>
     </main>
+
+    <footer id="contacto" role="contentinfo">
+        <div class="container-xl">
+            <div class="row g-5">
+
+                <!-- Brand -->
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <a class="footer-logo" href="index.html" aria-label="Yaumate Club - Inicio">
+                        <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="50" height="auto">
+                        </a>
+                    </div>
+                    <p class="footer-text mb-4">
+                        Tu sala de conciertos íntima en Nerja. Donde la música se siente de cerca.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="https://www.instagram.com/yaumate_club/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ubicación & Contacto -->
+                <div class="col-12 col-md-4">
+                    <p class="footer-heading">Ubicación</p>
+                    <a href="https://www.google.com/maps/place/Yaumate+Club/@36.7448219,-3.8865031,17z/data=!3m1!4b1!4m6!3m5!1s0xd7225847c8e2f57:0x4561be89475938da!8m2!3d36.744822!4d-3.8816322!16s%2Fg%2F11z5_7gt4w?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="footer-link">C/ Antonio Millón 7, Nerja, 29780, Málaga, España</a>
+
+                    <p class="footer-heading mt-4">Contacto</p>
+                    <a href="mailto:info@yaumateclub.com" class="footer-link">info@yaumateclub.com</a>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-md-4">
+                    <p class="footer-heading">Aforo Limitado</p>
+                    <p class="footer-text mb-3">Con solo 130 entradas por evento, suelen agotarse rápido. Únete a la lista para no quedarte fuera.</p>
+                    <form id="newsletterForm" novalidate>
+                        <div class="mb-2">
+                            <label for="nl-email" class="visually-hidden">Tu email</label>
+                            <input 
+                                type="email" 
+                                id="nl-email"
+                                class="nl-input" 
+                                placeholder="Tu email"
+                                required
+                                aria-required="true"
+                            >
+                        </div>
+                        <button type="submit" class="nl-btn">Avisadme</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer-bottom">
+                <span class="footer-bottom-text">&copy; 2026 Yaumate Club. Nerja.</span>
+                <div>
+                    <a href="#" class="footer-bottom-link">Legal</a>
+                    <a href="#" class="footer-bottom-link">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -387,16 +453,8 @@
             }
         });
 
-        // =======================================================
-        // JQUERY: Navbar scroll behaviour
-        // =======================================================
-        $(window).on('scroll.nav', function () {
-            if ($(this).scrollTop() > 60) {
-                $('.ym-nav').css('background', 'rgba(5,5,5,0.97)');
-            } else {
-                $('.ym-nav').css('background', 'rgba(5,5,5,0.92)');
-            }
-        });
+
+        
 
         // =======================================================
         // JQUERY: Close mobile menu on link click
@@ -406,17 +464,7 @@
             if (bsCollapse) bsCollapse.hide();
         });
 
-        // =======================================================
-        // JQUERY: Ticket button click (demo)
-        // =======================================================
-        $(document).on('click', '.btn-tickets', function () {
-            var $btn = $(this);
-            var original = $btn.text();
-            $btn.text('✓ Añadido').css({ background: '#333', color: '#fff', borderColor: '#333' });
-            setTimeout(function () {
-                $btn.text(original).css({ background: '', color: '', borderColor: '' });
-            }, 2000);
-        });
+    
 
         // =======================================================
         // JQUERY: Newsletter form submit (demo)
