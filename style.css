@@ -90,9 +90,9 @@ a { text-decoration: none; }
 
         .ym-nav .nav-link {
             font-family: var(--ff-display);
-            font-weight: 400;
-            font-size: 0.1rem;
-            letter-spacing: 0.06em;
+            font-weight: 900;
+            font-size: 0.5rem;
+            letter-spacing: 0.12em;
             color: var(--clr-gray-1) !important;
             padding: 0.5rem 0 !important;
             margin: 0 1.1rem;
@@ -181,7 +181,6 @@ a { text-decoration: none; }
 
         .hero-badge {
             display: inline-block;
-            border: 1px solid rgba(255,255,255,0.3);
             font-family: var(--ff-display);
             font-weight: 700;
             font-size: 0.7rem;
@@ -257,6 +256,15 @@ a { text-decoration: none; }
             color: var(--clr-white);
         }
 
+        .btn-ym-secondary {
+    background: transparent;
+    color: var(--clr-white);
+}
+
+.btn-ym-secondary:hover {
+    background: var(--clr-white);
+    color: var(--clr-bg);
+}
         
 
 
@@ -702,3 +710,23 @@ footer {
         opacity: 0;
         transform: translateX(40px);
     }
+
+/* RESPONSIVE */
+/* TABLET (≤ 992px) */
+        @media (max-width: 991.98px) {
+            .hero { min-height: 65vh; }
+            #conciertos { padding: 4rem 0; }
+            #la-sala { padding: 5rem 0; }
+            .sala-img-frame img { min-height: 320px; }
+        }
+
+        /* MOBILE (≤ 576px) */
+        @media (max-width: 575.98px) {
+            .hero { min-height: 80vh; align-items: flex-end; padding-bottom: 3rem; }
+            .hero-title { font-size: clamp(3.8rem, 22vw, 6rem); }
+            .event-card__img-wrap { height: 220px; }
+            .sala-stats { grid-template-columns: 1fr; gap: 1.4rem; }
+            .sala-img-frame { margin-top: 2.5rem; }
+            footer { padding-top: 3.5rem; }
+            .stat-item + .stat-item { border-left: none; border-top: 1px solid var(--clr-border); }
+        }
