@@ -61,6 +61,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#conciertos">CONCIERTOS</a></li>
                     <li class="nav-item"><a class="nav-link" href="#la-sala">LA SALA</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener" href="https://yaumateblog.cargo.site">BLOG</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
@@ -70,7 +71,7 @@
     <header id="top" class="hero" role="banner">
         <div class="hero-bg">
             <img 
-                src="img/hero.jpg" 
+                src="img/hero2.png" 
                 alt="" 
                 class="img-bw"
                 id="heroBgImg"
@@ -79,18 +80,19 @@
         </div>
 
         <div class="hero-content">
-            <div class="hero-badge gsap-fade"> Ya no salgo más.</div>
+            <div class="hero-badge gsap-fade"> Tú: "Ya no salgo más"<br>Yo:  
+            </div>
             <h1 class="hero-title">
-                <span class="d-block gsap-fade" style="--delay: 0.1s"></span>
-                <span class="d-block outline gsap-fade" style="--delay: 0.2s">YAUMATE</span>
+                <span class="d-block outline gsap-fade" style="--delay: 0.1s"></span>
+                <span class="d-block  gsap-fade" style="--delay: 0.2s">YAUMATE</span>
             </h1>
             <p class="hero-lead gsap-fade" style="--delay: 0.3s">
-                No te puedes perder lo que suena en Yaumate Club, la nueva sala de música en directo en Nerja.
+                La nueva sala de música en directo en Nerja.
             </p>
             <a href="#conciertos" class="btn-ym-primary gsap-fade" style="--delay: 0.4s">
                 Ver Programación
             </a>
-            <a href="#conciertos" class="btn-ym-primary btn-ym-secondary gsap-fade" style="--delay: 0.4s">
+            <a href="https://soundtix.com/promoter/11" class="btn-ym-primary btn-ym-secondary gsap-fade" style="--delay: 0.4s">
                 Comprar Entradas
             </a>
         </div>
@@ -150,12 +152,12 @@
                             <div class="event-card__date">13 Junio</div>
                         </div>
                         <div class="event-card__body">
-                            <span class="event-card__genre">Rock Español</span>
+                            <span class="event-card__genre">Pop-Rock Español</span>
                             <h3 class="event-card__title">Germán Salto</h3>
                             <p class="event-card__desc">Ha tocado con Steve Wynn, ha dirigido la gira europea de Nikki Lane y ha publicado discos que enamoran a la crítica uno tras otro. Ahora llega a Nerja con Ojo de Bife, su nuevo trabajo de power pop y americana en castellano</p>
                             <div class="event-card__footer" >
-                                <span class="event-card__price">9,99€</span>
-                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Germán Salto">Entradas</a>
+                                <span class="event-card__price">9,90€</span>
+                                <a href="https://soundtix.com/show/german-salto" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Germán Salto">Entradas</a>
                             </div>
                         </div>
                     </article>
@@ -177,15 +179,40 @@
                             <h3 class="event-card__title">MFC Chicken</h3>
                             <p class="event-card__desc">Una de esas noches donde vienes a escuchar música y acabas sin querer irte. </p>
                             <div class="event-card__footer">
-                                <span class="event-card__price">9,99€</span>
-                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para MFC Chicken">Entradas</a>
+                                <span class="event-card__price">9,90€</span>
+                                <a href="https://soundtix.com/show/mfc-chicken" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para MFC Chicken">Entradas</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                    <article class="event-card img-bw-hover" aria-label="Concierto: Los Fusiles">
+                        <div class="event-card__img-wrap">
+                            <img 
+                                src="img/LosFusiles.png" 
+                                alt="Los Fusiles"
+                                class="img-bw"
+                            >
+                            <div class="event-card__date">31 Julio</div>
+                            <div class="event-card__sold-out" aria-label="Entradas agotadas">
+                                <span>Viernes de Verano</span>
+                            </div>
+                        </div>
+                        <div class="event-card__body">
+                            <span class="event-card__genre">Pop-Rock Español</span>
+                            <h3 class="event-card__title">Los Fusiles</h3>
+                            <p class="event-card__desc">lorem ipsum dolor sit amet</p>
+                            <div class="event-card__footer">
+                                <span class="event-card__price">9,90€</span>
+                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Los Fusiles">Entradas</a>
                             </div>
                         </div>
                     </article>
                 </div>
 
                 <!-- Evento 3 – Sold Out -->
-                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                <!-- <div class="col-12 col-md-6 col-lg-4 gsap-fade">
                     <article class="event-card" style="opacity:0.6;" aria-label="Concierto: Sesión Analógica (agotado)">
                         <div class="event-card__img-wrap">
                             <img 
@@ -209,7 +236,7 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -226,20 +253,33 @@
                         <span class="muted">Sala</span>
                     </h2>
                     <p class="sala-lead gsap-fade">
-                        Ubicado en el corazón de Nerja, <strong>Yaumate Club</strong> es una sala diseñada por y para melómanos. Creemos en la cercanía entre el artista y el público.
+                        Yaumate Club, tiene el ambiente perfecto para disfrutar un buen concierto, sesiones de Dj’s, fiestas, y todo tipo de eventos.  
+                        <br>
+                        Tiene una capacidad para un total de 130 personas y está ubicado en la zona de ocio y bares nocturnos de Nerja, en la calle Antonio Millón número 7, en los bajos del Edificio Corona.
+                        <br>
+                        Yaumate Club está especializado en la programación de conciertos y musica en directo, por lo que dispone de un completo equipo audiovisual y una acústica inmejorable.
                     </p>
-                    <p class="sala-lead gsap-fade">
-                        Con un aforo estricto para mantener la intimidad, nuestra acústica está cuidada al milímetro para ofrecer directos puros, crudos y memorables.
-                    </p>
-
-                    <div class="sala-stats gsap-fade">
+                    <h2 class="sala-subtitle gsap-fade-left" id="sala-subtitle">
+                        Espacio para: <br>
+                    </h2>
+                    <div class="sala-events gsap-fade">
                         <div>
-                            <span class="sala-stat-num">130</span>
-                            <span class="sala-stat-label">Aforo Máximo</span>
+                            <span class="sala-stat-label">CONCIERTOS</span>
                         </div>
                         <div>
-                            <span class="sala-stat-num">Nerja</span>
-                            <span class="sala-stat-label">Málaga, Andalucía</span>
+                            <span class="sala-stat-label">FIESTAS PRIVADAS</span>
+                        </div>
+                        <div>
+                            <span class="sala-stat-label">ANIVERSARIOS</span>
+                        </div>
+                        <div>
+                            <span class="sala-stat-label">RODAJES</span>
+                        </div>
+                        <div>
+                            <span class="sala-stat-label">CATERINGS</span>
+                        </div>
+                        <div>
+                            <span class="sala-stat-label">ACTOS CULTURALES</span>
                         </div>
                     </div>
                 </div>
@@ -248,7 +288,7 @@
                 <div class="col-12 col-lg-6 gsap-fade-right">
                     <div class="sala-img-frame">
                         <img 
-                            src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=900&q=80" 
+                            src="img/sala.jpg" 
                             alt="Interior de la sala Yaumate Club"
                             class="img-bw"
                         >

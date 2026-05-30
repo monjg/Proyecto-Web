@@ -34,11 +34,9 @@ a { text-decoration: none; }
 
 
 /* Imágenes Blanco y negro  */
-.img-bw {
-    filter: grayscale(100%) contrast(1.05);
-    transition: filter var(--transition);
+ .img-bw {
+    filter: grayscale(15%) contrast(0.7);
 }
-.img-bw-hover:hover .img-bw { filter: grayscale(70%) contrast(1.15); }
 
 
 
@@ -46,7 +44,7 @@ a { text-decoration: none; }
    MARQUEE  */
 
     .ticker {
-        background: var(--clr-white);
+        background: rgb(179, 179, 179);
         color: var(--clr-bg);
         padding: 9px 0;
         overflow: hidden;
@@ -160,10 +158,8 @@ a { text-decoration: none; }
             z-index: 0;
         }
         .hero-bg img {
-            width: 100%; height: 100%;
+            width: 105%; height: 100%;
             object-fit: cover;
-            opacity: 0.38;
-            will-change: transform;
         }
         .hero-gradient {
             position: absolute;
@@ -172,8 +168,8 @@ a { text-decoration: none; }
         }
 
         .hero-content {
-            position: relative;
-            z-index: 10;
+            position: relative; 
+            z-index: 5;
             text-align: center;
             padding:  1rem;
             gap: 100px; 
@@ -183,7 +179,7 @@ a { text-decoration: none; }
             display: inline-block;
             font-family: var(--ff-display);
             font-weight: 700;
-            font-size: 0.7rem;
+            font-size: 1.1rem;
             letter-spacing: 0.3em;
             text-transform: uppercase;
             color: var(--clr-white);
@@ -204,6 +200,7 @@ a { text-decoration: none; }
         .hero-title .outline {
             -webkit-text-stroke: 1.5px var(--clr-white);
             color: transparent;
+            font-size:clamp(3rem, 8vw, 5rem);
         }
 
         .hero-lead {
@@ -402,6 +399,7 @@ CONCIERTOS  */
         .event-card__sold-out span {
             background: var(--clr-white);
             color: var(--clr-bg);
+            opacity: 0.75;
             font-family: var(--ff-display);
             font-weight: 900;
             font-size: 0.9rem;
@@ -535,28 +533,28 @@ LA SALA  */
             font-size: 1.05rem;
             color: #ccc;
             line-height: 1.7;
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .sala-subtitle {
+            font-family: var(--ff-display);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--clr-gray-1);
+            margin-bottom: 1rem;
+            margin-top: 3rem;
+        }
+        .sala-events {
+            /* border-bottom: 1px solid var(--clr-border); */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.4rem;
         }
 
-        .sala-stats {
-            border-top: 1px solid var(--clr-border);
-            padding-top: 2rem;
-            margin-top: 2.5rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        .sala-stat-num {
-            font-family: var(--ff-display);
-            font-weight: 900;
-            font-size: clamp(2.2rem, 5vw, 3.5rem);
-            display: block;
-            line-height: 1;
-            margin-bottom: 4px;
-        }
         .sala-stat-label {
             font-family: var(--ff-display);
-            font-size: 0.62rem;
+            font-size: 0.7rem;
             font-weight: 400;
             letter-spacing: 0.22em;
             text-transform: uppercase;
@@ -611,7 +609,7 @@ footer {
         .footer-link:hover { color: var(--clr-white); }
 
         .social-btn {
-            width: 38px; height: 38px;
+            width: 48px; height: 48px;
             border: 1px solid var(--clr-border);
             display: flex;
             align-items: center;
