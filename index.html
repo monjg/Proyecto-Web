@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaumate Club | Sala de Conciertos en Nerja</title>
     <meta name="description" content="Yaumate Club, la sala de conciertos íntima de Nerja. Música en directo, aforo limitado a 130 personas. El rincón más puro para la música en vivo en Andalucía.">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;0,900;1,900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap 5 CSS -->
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+ 
+    <!-- TICKER -->
     <div class="ticker" aria-hidden="true">
         <div class="ticker-track" id="tickerTrack">
             <span>Yaumate Club</span>
@@ -44,19 +41,16 @@
             <span>·</span>
         </div>
     </div>
+ 
+    <!-- NAVBAR -->
     <nav class="ym-nav navbar navbar-expand-md" aria-label="Navegación principal">
         <div class="container-xl">
-            <!-- Logo -->
             <a class="navbar-brand" href="#top" aria-label="Yaumate Club - Inicio">
                 <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="80" height="auto">
             </a>
-
-            <!-- Mobile toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
-            </button> 
-
-            <!-- Nav links -->
+            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#conciertos">CONCIERTOS</a></li>
@@ -67,37 +61,30 @@
             </div>
         </div>
     </nav>
-
+ 
+    <!-- HERO -->
     <header id="top" class="hero" role="banner">
         <div class="hero-bg">
-            <img 
-                src="img/hero2.png" 
-                alt="" 
-                class="img-bw"
-                id="heroBgImg"
-            >
+            <img src="img/hero2.png" alt="" class="img-bw" id="heroBgImg">
             <div class="hero-gradient" aria-hidden="true"></div>
         </div>
-
         <div class="hero-content">
-            <div class="hero-badge gsap-fade"> Tú: "Ya no salgo más"<br>Yo:  
-            </div>
+            <div class="hero-badge gsap-fade">Tú: "Ya no salgo más"<br>Yo:</div>
             <h1 class="hero-title">
                 <span class="d-block outline gsap-fade" style="--delay: 0.1s"></span>
-                <span class="d-block  gsap-fade" style="--delay: 0.2s">YAUMATE</span>
+                <span class="d-block gsap-fade" style="--delay: 0.2s">YAUMATE</span>
             </h1>
             <p class="hero-lead gsap-fade" style="--delay: 0.3s">
                 La nueva sala de música en directo en Nerja.
             </p>
-            <a href="#conciertos" class="btn-ym-primary gsap-fade" style="--delay: 0.4s">
-                Ver Programación
-            </a>
-            <a href="https://soundtix.com/promoter/11" class="btn-ym-primary btn-ym-secondary gsap-fade" style="--delay: 0.4s">
-                Comprar Entradas
-            </a>
+            <div class="hero-buttons gsap-fade" style="--delay: 0.4s">
+                <a href="#conciertos" class="btn-ym-primary">Ver Programación</a>
+                <a href="https://soundtix.com/promoter/11" class="btn-ym-primary btn-ym-secondary">Comprar Entradas</a>
+            </div>
         </div>
     </header>
-
+ 
+    <!-- STATS -->
     <div class="stats-bar">
         <div class="container-xl">
             <div class="row g-0 justify-content-center">
@@ -128,233 +115,195 @@
             </div>
         </div>
     </div>
-
-
-
+ 
     <main>
-    <section id="conciertos" aria-labelledby="cartelera-title">
-        <div class="container-xl">
-            <div class="section-header">
-                <h2 class="section-title gsap-fade-left" id="cartelera-title">Programación</h2>
-                <a href="#conciertos" class="btn-ym-ghost gsap-fade-right" id="allEventsBtn">Todos los eventos</a>
-            </div>
-
-            <div class="row g-4">
-                <!-- Evento 1 -->
-                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card img-bw-hover" aria-label="Concierto: Germán Salto">
-                        <div class="event-card__img-wrap">
-                            <img 
-                                src="img/German.png" 
-                                alt="Germán Salto"
-                                class="img-bw"
-                            >
-                            <div class="event-card__date">13 Junio</div>
-                        </div>
-                        <div class="event-card__body">
-                            <span class="event-card__genre">Pop-Rock Español</span>
-                            <h3 class="event-card__title">Germán Salto</h3>
-                            <p class="event-card__desc">Ha tocado con Steve Wynn, ha dirigido la gira europea de Nikki Lane y ha publicado discos que enamoran a la crítica uno tras otro. Ahora llega a Nerja con Ojo de Bife, su nuevo trabajo de power pop y americana en castellano</p>
-                            <div class="event-card__footer" >
-                                <span class="event-card__price">9,90€</span>
-                                <a href="https://soundtix.com/show/german-salto" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Germán Salto">Entradas</a>
-                            </div>
-                        </div>
-                    </article>
+ 
+        <!-- CONCIERTOS -->
+        <section id="conciertos" aria-labelledby="cartelera-title">
+            <div class="container-xl">
+                <div class="section-header">
+                    <h2 class="section-title gsap-fade-left" id="cartelera-title">Programación</h2>
+                    <a href="#conciertos" class="btn-ym-ghost gsap-fade-right" id="allEventsBtn">Todos los eventos</a>
                 </div>
-
-                <!-- Evento 2 -->
-                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card img-bw-hover" aria-label="Concierto: MFC Chicken">
-                        <div class="event-card__img-wrap">
-                            <img 
-                                src="img/MFC.png" 
-                                alt="MFC Chicken"
-                                class="img-bw"
-                            >
-                            <div class="event-card__date">25 Junio</div>
-                        </div>
-                        <div class="event-card__body">
-                            <span class="event-card__genre">Rock 'n' Roll / Swing / Rhythm & Blues</span>
-                            <h3 class="event-card__title">MFC Chicken</h3>
-                            <p class="event-card__desc">Una de esas noches donde vienes a escuchar música y acabas sin querer irte. </p>
-                            <div class="event-card__footer">
-                                <span class="event-card__price">9,90€</span>
-                                <a href="https://soundtix.com/show/mfc-chicken" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para MFC Chicken">Entradas</a>
+                <div class="row g-4">
+ 
+                    <!-- Evento 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                        <article class="event-card img-bw-hover" aria-label="Concierto: Germán Salto">
+                            <div class="event-card__img-wrap">
+                                <img src="img/German.png" alt="Germán Salto" class="img-bw">
+                                <div class="event-card__date">13 Junio</div>
                             </div>
-                        </div>
-                    </article>
+                            <div class="event-card__body">
+                                <span class="event-card__genre">Pop-Rock Español</span>
+                                <h3 class="event-card__title">Germán Salto</h3>
+                                <p class="event-card__desc">Ha tocado con Steve Wynn, ha dirigido la gira europea de Nikki Lane y ha publicado discos que enamoran a la crítica uno tras otro. Ahora llega a Nerja con Ojo de Bife, su nuevo trabajo de power pop y americana en castellano.</p>
+                                <div class="event-card__footer">
+                                    <span class="event-card__price">9,90€</span>
+                                    <a href="https://soundtix.com/show/german-salto" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Germán Salto">Entradas</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <!-- Evento 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                        <article class="event-card img-bw-hover" aria-label="Concierto: MFC Chicken">
+                            <div class="event-card__img-wrap">
+                                <img src="img/MFC.png" alt="MFC Chicken" class="img-bw">
+                                <div class="event-card__date">25 Junio</div>
+                            </div>
+                            <div class="event-card__body">
+                                <span class="event-card__genre">Rock 'n' Roll / Swing / Rhythm & Blues</span>
+                                <h3 class="event-card__title">MFC Chicken</h3>
+                                <p class="event-card__desc">Una de esas noches donde vienes a escuchar música y acabas sin querer irte.</p>
+                                <div class="event-card__footer">
+                                    <span class="event-card__price">9,90€</span>
+                                    <a href="https://soundtix.com/show/mfc-chicken" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para MFC Chicken">Entradas</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <!-- Evento 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 gsap-fade">
+                        <article class="event-card img-bw-hover" aria-label="Concierto: Los Fusiles">
+                            <div class="event-card__img-wrap">
+                                <img src="img/LosFusiles.png" alt="Los Fusiles" class="img-bw">
+                                <div class="event-card__date">31 Julio</div>
+                                <div class="event-card__sold-out" aria-label="Viernes de Verano">
+                                    <span>Viernes de Verano</span>
+                                </div>
+                            </div>
+                            <div class="event-card__body">
+                                <span class="event-card__genre">Pop-Rock Español</span>
+                                <h3 class="event-card__title">Los Fusiles</h3>
+                                <p class="event-card__desc">lorem ipsum dolor sit amet</p>
+                                <div class="event-card__footer">
+                                    <span class="event-card__price">9,90€</span>
+                                    <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Los Fusiles">Entradas</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+ 
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card img-bw-hover" aria-label="Concierto: Los Fusiles">
-                        <div class="event-card__img-wrap">
-                            <img 
-                                src="img/LosFusiles.png" 
-                                alt="Los Fusiles"
-                                class="img-bw"
-                            >
-                            <div class="event-card__date">31 Julio</div>
-                            <div class="event-card__sold-out" aria-label="Entradas agotadas">
-                                <span>Viernes de Verano</span>
-                            </div>
-                        </div>
-                        <div class="event-card__body">
-                            <span class="event-card__genre">Pop-Rock Español</span>
-                            <h3 class="event-card__title">Los Fusiles</h3>
-                            <p class="event-card__desc">lorem ipsum dolor sit amet</p>
-                            <div class="event-card__footer">
-                                <span class="event-card__price">9,90€</span>
-                                <a href="https://soundtix.com/promoter/11" target="_blank" rel="noopener" class="btn-tickets" aria-label="Comprar entradas para Los Fusiles">Entradas</a>
-                            </div>
-                        </div>
-                    </article>
-                </div> 
-
-                <!-- Evento 3 – Sold Out -->
-                <!-- <div class="col-12 col-md-6 col-lg-4 gsap-fade">
-                    <article class="event-card" style="opacity:0.6;" aria-label="Concierto: Sesión Analógica (agotado)">
-                        <div class="event-card__img-wrap">
-                            <img 
-                                src="https://images.unsplash.com/photo-1470229722913-7c092bb4ace4?auto=format&fit=crop&w=800&q=80" 
-                                alt="Sesión Analógica"
-                                class="img-bw"
-                                style="opacity:0.5;"
-                            >
-                            <div class="event-card__date event-card__date--dark">15 Jun</div>
-                            <div class="event-card__sold-out" aria-label="Entradas agotadas">
-                                <span>Sold Out</span>
-                            </div>
-                        </div>
-                        <div class="event-card__body">
-                            <span class="event-card__genre">Electrónica</span>
-                            <h3 class="event-card__title">Sesión Analógica</h3>
-                            <p class="event-card__desc">Sintetizadores en directo. Aforo completo alcanzado.</p>
-                            <div class="event-card__footer">
-                                <span class="event-card__price event-card__price--muted">—</span>
-                                <button class="btn-tickets-disabled" disabled aria-disabled="true">Agotado</button>
-                            </div>
-                        </div>
-                    </article>
-                </div> -->
             </div>
-        </div>
-    </section>
-
-
-
-    <section id="la-sala" aria-labelledby="sala-title">
-        <div class="container-xl">
-            <div class="row g-5 align-items-center">
-                <!-- Text -->
-                <div class="col-12 col-lg-6">
-                    <h2 class="sala-heading gsap-fade-left" id="sala-title">
-                        La<br>
-                        <span class="muted">Sala</span>
-                    </h2>
-                    <p class="sala-lead gsap-fade">
-                        Yaumate Club, tiene el ambiente perfecto para disfrutar un buen concierto, sesiones de Dj’s, fiestas, y todo tipo de eventos.  
-                        <br>
-                        Tiene una capacidad para un total de 130 personas y está ubicado en la zona de ocio y bares nocturnos de Nerja, en la calle Antonio Millón número 7, en los bajos del Edificio Corona.
-                        <br>
-                        Yaumate Club está especializado en la programación de conciertos y musica en directo, por lo que dispone de un completo equipo audiovisual y una acústica inmejorable.
-                    </p>
-                    <h2 class="sala-subtitle gsap-fade-left" id="sala-subtitle">
-                        Espacio para: <br>
-                    </h2>
-                    <div class="sala-events gsap-fade">
-                        <div>
-                            <span class="sala-stat-label">CONCIERTOS</span>
+        </section>
+ 
+        <!-- LA SALA -->
+        <section id="la-sala" aria-labelledby="sala-title">
+            <div class="container-xl">
+                <div class="row g-5 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="sala-heading gsap-fade-left" id="sala-title">
+                            La<br>
+                            <span class="muted">Sala</span>
+                        </h2>
+                        <p class="sala-lead gsap-fade">
+                            Yaumate Club tiene el ambiente perfecto para disfrutar un buen concierto, sesiones de DJ's, fiestas, y todo tipo de eventos.<br><br>
+                            Tiene una capacidad para un total de 130 personas y está ubicado en la zona de ocio y bares nocturnos de Nerja, en la calle Antonio Millón número 7, en los bajos del Edificio Corona.<br><br>
+                            Yaumate Club está especializado en la programación de conciertos y música en directo, por lo que dispone de un completo equipo audiovisual y una acústica inmejorable.
+                        </p>
+                        <h2 class="sala-subtitle gsap-fade-left">Espacio para:</h2>
+                        <div class="sala-events gsap-fade">
+                            <div><span class="sala-stat-label">CONCIERTOS</span></div>
+                            <div><span class="sala-stat-label">FIESTAS PRIVADAS</span></div>
+                            <div><span class="sala-stat-label">ANIVERSARIOS</span></div>
+                            <div><span class="sala-stat-label">RODAJES</span></div>
+                            <div><span class="sala-stat-label">CATERINGS</span></div>
+                            <div><span class="sala-stat-label">ACTOS CULTURALES</span></div>
                         </div>
-                        <div>
-                            <span class="sala-stat-label">FIESTAS PRIVADAS</span>
-                        </div>
-                        <div>
-                            <span class="sala-stat-label">ANIVERSARIOS</span>
-                        </div>
-                        <div>
-                            <span class="sala-stat-label">RODAJES</span>
-                        </div>
-                        <div>
-                            <span class="sala-stat-label">CATERINGS</span>
-                        </div>
-                        <div>
-                            <span class="sala-stat-label">ACTOS CULTURALES</span>
+                    </div>
+                    <div class="col-12 col-lg-6 gsap-fade-right">
+                        <div class="sala-img-frame">
+                            <img src="img/sala.jpg" alt="Interior de la sala Yaumate Club" class="img-bw">
                         </div>
                     </div>
                 </div>
-
-                <!-- Image -->
-                <div class="col-12 col-lg-6 gsap-fade-right">
-                    <div class="sala-img-frame">
-                        <img 
-                            src="img/sala.jpg" 
-                            alt="Interior de la sala Yaumate Club"
-                            class="img-bw"
-                        >
+            </div>
+        </section>
+ 
+        <!-- GALERÍA -->
+        <section id="galeria" aria-labelledby="galeria-title">
+            <div class="container-xl">
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="img/hero1.jpg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galeria-2.jpg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galeria-3.jpg" alt="">
+                    </div>
+                    <div class="gallery-item wide">
+                        <img src="img/galeria-4.jpg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galeria-5.jpg" alt="">
+                    </div>
+                    <div class="gallery-item tall">
+                        <img src="img/galeria-6.jpg" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+ 
     </main>
-
+ 
+    <!-- FOOTER -->
     <footer id="contacto" role="contentinfo">
         <div class="container-xl">
             <div class="row g-5">
-
-                <!-- Brand -->
+ 
                 <div class="col-12 col-md-4">
                     <div class="d-flex align-items-center gap-2 mb-3">
                         <a class="footer-logo" href="index.html" aria-label="Yaumate Club - Inicio">
-                        <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="50" height="auto">
+                            <img src="img/logo.png" alt="Logo de Yaumate Club" class="d-inline-block align-text-top" width="50" height="auto">
                         </a>
                     </div>
-                    <p class="footer-text mb-4">
-                        Tu sala de conciertos íntima en Nerja. Donde la música se siente de cerca.
-                    </p>
+                    <p class="footer-text mb-4">Tu sala de conciertos íntima en Nerja. Donde la música se siente de cerca.</p>
                     <div class="d-flex gap-2">
                         <a href="https://www.instagram.com/yaumate_club/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
                             <i class="bi bi-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.facebook.com/TU_PAGINA" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook"> <i class="bi bi-facebook" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/TU_PAGINA" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.youtube.com/@YaumateClub" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube"> <i class="bi bi-youtube" aria-hidden="true"></i> </a>
+                        <a href="https://www.youtube.com/@YaumateClub" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
                     </div>
-                </div>
-
-                <!-- Ubicación & Contacto -->
-                <div class="col-12 col-md-4">
-                    <p class="footer-heading">Ubicación</p>
-                    <a href="https://www.google.com/maps/place/Yaumate+Club/@36.7448219,-3.8865031,17z/data=!3m1!4b1!4m6!3m5!1s0xd7225847c8e2f57:0x4561be89475938da!8m2!3d36.744822!4d-3.8816322!16s%2Fg%2F11z5_7gt4w?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="footer-link">C/ Antonio Millón 7, Nerja, 29780, Málaga, España</a>
-
                     <p class="footer-heading mt-4">Contacto</p>
                     <a href="mailto:info@yaumateclub.com" class="footer-link">info@yaumateclub.com</a>
                 </div>
-
-                <!-- Newsletter -->
+ 
+                <div class="col-12 col-md-4">
+                    <p class="footer-heading">Ubicación</p>
+                    <div class="footer-map">
+                        <a href="https://www.google.com/maps/place/Yaumate+Club/@36.7448219,-3.8865031,17z" target="_blank" rel="noopener">
+                            <img src="img/mapa-yaumate.png" alt="Ubicación Yaumate Club">
+                            <div class="map-overlay"><span>ABRIR MAPA</span></div>
+                        </a>
+                    </div>
+                    <span class="footer-link">C/ Antonio Millón 7, Nerja, 29780, Málaga, España</span>
+                </div>
+ 
                 <div class="col-12 col-md-4">
                     <p class="footer-heading">Aforo Limitado</p>
                     <p class="footer-text mb-3">Con solo 130 entradas por evento, suelen agotarse rápido. Únete a la lista para no quedarte fuera.</p>
                     <form id="newsletterForm" novalidate>
                         <div class="mb-2">
                             <label for="nl-email" class="visually-hidden">Tu email</label>
-                            <input 
-                                type="email" 
-                                id="nl-email"
-                                class="nl-input" 
-                                placeholder="Tu email"
-                                required
-                                aria-required="true"
-                            >
+                            <input type="email" id="nl-email" class="nl-input" placeholder="Tu email" required aria-required="true">
                         </div>
                         <button type="submit" class="nl-btn">Avisadme</button>
                     </form>
                 </div>
-
+ 
             </div>
-
-            <!-- Bottom bar -->
+ 
             <div class="footer-bottom">
                 <span class="footer-bottom-text">&copy; 2026 Yaumate Club. Nerja.</span>
                 <div>
@@ -364,154 +313,76 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <!-- Bootstrap JS Bundle -->
+ 
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- GSAP + ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
+ 
     <script>
     $(function () {
-        // =======================================================
-        // GSAP: register plugin
-        // =======================================================
         gsap.registerPlugin(ScrollTrigger);
-
-        // =======================================================
-        // HERO ANIMATIONS (on load)
-        // =======================================================
-        const heroTimeline = gsap.timeline({ delay: 0.15 });
-
-        heroTimeline
-            .to('.hero .hero-badge', {
-                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
-            })
-            .to('.hero-title .d-block', {
-                opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', stagger: 0.12
-            }, '-=0.3')
-            .to('.hero-lead', {
-                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
-            }, '-=0.3')
-            .to('.hero .btn-ym-primary', {
-                opacity: 1, y: 0, duration: 0.6, ease: 'power3.out'
-            }, '-=0.3');
-
-        // =======================================================
-        // HERO PARALLAX (GSAP ScrollTrigger)
-        // =======================================================
+ 
+        // Hero animations
+        gsap.timeline({ delay: 0.15 })
+            .to('.hero .hero-badge',      { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' })
+            .to('.hero-title .d-block',   { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out', stagger: 0.12 }, '-=0.3')
+            .to('.hero-lead',             { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3')
+            .to('.hero .hero-buttons',    { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3');
+ 
+        // Hero parallax
         gsap.to('#heroBgImg', {
             y: '20%',
             ease: 'none',
-            scrollTrigger: {
-                trigger: '.hero',
-                start: 'top top',
-                end: 'bottom top',
-                scrub: true
-            }
+            scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
         });
-
-        // =======================================================
-        // SCROLL ANIMATIONS: fade-up elements
-        // =======================================================
+ 
+        // Scroll fade-up
         gsap.utils.toArray('.gsap-fade').forEach(function (el) {
-            // Skip hero elements (already animated)
             if ($(el).closest('.hero').length) return;
-
             gsap.to(el, {
-                opacity: 1,
-                y: 0,
-                duration: 0.8,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: el,
-                    start: 'top 88%',
-                    toggleActions: 'play none none none'
-                }
+                opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
             });
         });
-
+ 
         gsap.utils.toArray('.gsap-fade-left').forEach(function (el) {
             gsap.to(el, {
-                opacity: 1,
-                x: 0,
-                duration: 0.9,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: el,
-                    start: 'top 88%',
-                    toggleActions: 'play none none none'
-                }
+                opacity: 1, x: 0, duration: 0.9, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
             });
         });
-
+ 
         gsap.utils.toArray('.gsap-fade-right').forEach(function (el) {
             gsap.to(el, {
-                opacity: 1,
-                x: 0,
-                duration: 0.9,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: el,
-                    start: 'top 88%',
-                    toggleActions: 'play none none none'
-                }
+                opacity: 1, x: 0, duration: 0.9, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
             });
         });
-
-        // =======================================================
-        // JQUERY: Stats counter animation
-        // =======================================================
-        var afocoAnimated = false;
-
-        function animateCounter($el, target, duration) {
-            $({ value: 0 }).animate({ value: target }, {
-                duration: duration,
-                easing: 'swing',
-                step: function () {
-                    $el.text(Math.floor(this.value));
-                },
-                complete: function () {
-                    $el.text(target);
-                }
-            });
-        }
-
+ 
+        // Stats counter
+        var aforoAnimated = false;
         $(window).on('scroll.stats', function () {
             var $stat = $('#statAforo');
-            if (!afocoAnimated && $stat.length) {
-                var top = $stat[0].getBoundingClientRect().top;
-                if (top < window.innerHeight * 0.92) {
-                    afocoAnimated = true;
-                    animateCounter($stat, 130, 1200);
-                    $(window).off('scroll.stats');
-                }
+            if (!aforoAnimated && $stat.length && $stat[0].getBoundingClientRect().top < window.innerHeight * 0.92) {
+                aforoAnimated = true;
+                $({ value: 0 }).animate({ value: 130 }, {
+                    duration: 1200, easing: 'swing',
+                    step: function () { $stat.text(Math.floor(this.value)); },
+                    complete: function () { $stat.text(130); }
+                });
+                $(window).off('scroll.stats');
             }
         });
-
-
-        
-
-        // =======================================================
-        // JQUERY: Close mobile menu on link click
-        // =======================================================
+ 
+        // Close mobile menu on link click
         $('#navCollapse .nav-link').on('click', function () {
             var bsCollapse = bootstrap.Collapse.getInstance(document.getElementById('navCollapse'));
             if (bsCollapse) bsCollapse.hide();
         });
-
-    
-
-        // =======================================================
-        // JQUERY: Newsletter form submit (demo)
-        // =======================================================
+ 
+        // Newsletter form
         $('#newsletterForm').on('submit', function (e) {
             e.preventDefault();
             var $input = $('#nl-email');
@@ -528,24 +399,24 @@
                 $input.prop('disabled', false);
             }, 4000);
         });
-
-        // =======================================================
-        // GSAP: Event cards stagger on scroll
-        // =======================================================
+ 
+        // Event cards stagger
         gsap.from('.event-card', {
-            opacity: 0,
-            y: 50,
-            duration: 0.7,
-            stagger: 0.15,
-            ease: 'power3.out',
-            scrollTrigger: {
-                trigger: '#conciertos .row',
-                start: 'top 85%',
-                toggleActions: 'play none none none'
-            }
+            opacity: 0, y: 50, duration: 0.7, stagger: 0.15, ease: 'power3.out',
+            scrollTrigger: { trigger: '#conciertos .row', start: 'top 85%', toggleActions: 'play none none none' }
         });
-
-    }); // end jQuery ready
+ 
+        // Gallery entrance
+        gsap.set('.gallery-item', { opacity: 0, y: 80 });
+        ScrollTrigger.batch('.gallery-item', {
+            start: 'top 90%',
+            onEnter: function (batch) {
+                gsap.to(batch, { opacity: 1, y: 0, duration: 1.2, stagger: 0.12, ease: 'power3.out' });
+            },
+            once: true
+        });
+ 
+    });
     </script>
-
+ 
 </body>
